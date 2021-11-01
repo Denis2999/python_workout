@@ -1,11 +1,11 @@
 def digital_root(n):
-    sum_x = 0
-    while sum_x < 10:
-        x = [int(a) for a in str(n)]
-        sum_x = sum(x)
-        print(sum_x)
+    # while n >= 10:
+    #     x = [int(a) for a in str(n)]
+    #     n = sum(x)
+    #
+    # return n
+    # print(digital_root(sum(map(int, str(n)))))
+    return n % 9 or n and 9
 
-    # return sum_x
 
-
-print(digital_root(493193))
+print(digital_root(901))
